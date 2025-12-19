@@ -1,5 +1,8 @@
-/* 
-- ให้เขียน Function ที่ชื่อว่า exponentialNumber ซึ่งมีคุณสมบัติต่อไปนี้
+/* //map ใช้เมื่อเข้าภึงสมาชิกทุกตัว
+     filter กรอง เมื่อมีเงื่อนไข
+     reduce รวมค่า หรือ แสดงผลลัพสุดท้ายตัวเดียว
+
+     - ให้เขียน Function ที่ชื่อว่า exponentialNumber ซึ่งมีคุณสมบัติต่อไปนี้
     - รับ Parameter 1 ตัวคือ numbers
         1. numbers เป็น Array ที่บรรจุตัวเลข
     - Function นี้จะนำตัวเลขทุกตัวใน numbers มายกกำลังสอง แล้ว Return ค่าออกมา
@@ -7,6 +10,9 @@
 */
 
 // Start coding here
+ function exponentialNumber (numbers){
+    return numbers.map((number) => number ** 2);
+ }
 
 const numbers1 = [3, 5, 10, 12];
 console.log(exponentialNumber(numbers1)); // [ 9, 25, 100, 144 ]
